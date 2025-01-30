@@ -1,0 +1,281 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background: linear-gradient( to right,rgba(255, 0,0,0), rgba(255,0,0,1)); */
+    background-color: #000;
+    color: #fff;
+    font-family: 'Open sans', sans-serif !important;
+    user-select: none;
+}
+
+.header {
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/netflix-image2.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8px;
+    position: relative;
+    border-bottom: 3px solid #ff0000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.logo {
+    width: 150px;
+}
+
+button {
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    border: none;
+
+}
+
+button:hover {
+    background-color: #c92a2a
+}
+
+.header-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.header-content h1 {
+    font-size: 48px;
+    font-weight: 800;
+    line-height: 1;
+}
+
+.header-content h3 {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.header-content p {
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+.email-signup{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+} 
+
+.email-signup input[type=email] {
+    flex: 1;
+    background: transparent;
+    padding: 20px 80px;
+    width: 60%;
+    border: 2px solid white;
+    border-radius: 5px;
+    outline: none;
+    
+}
+
+.get-started {
+    padding: 20px 50px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.size-6 {
+    height: 18px;
+    position: absolute;
+    font-weight: 700;
+}
+
+/* SECTION ONE */
+section {
+    margin: 10px 100px;
+}
+
+section h2 {
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+select {
+    background-color: transparent;
+    color: #fff;
+    width: 100px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 4px;
+
+}
+
+option {
+    color: black;
+    background-color: white;
+}
+
+option:hover {
+    background-color: blue;
+}
+
+.movie-card {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: repeat(5, auto);
+    gap: 15px;
+    margin: 20px 50px 20px 20px;
+
+
+}
+
+.card-img {
+    border-radius: 8px;
+    position: relative;
+
+
+
+}
+
+.card-img img {
+    border-radius: 10px;
+}
+
+.number {
+    position: absolute;
+    bottom: 20px;
+    left: -10px;
+    font-size: 80px;
+    color: black;
+    font-weight: 900;
+    -webkit-text-stroke: 3px #f1f3f5;
+}
+
+.card2 {
+    transition: 0.5s ease;
+
+}
+
+.card2 img {
+    border-radius: 10px;
+    width: 200px;
+}
+
+.card2:hover {
+    transform: scale(1.2);
+}
+
+.cards {
+    display: flex;
+    gap: 15px;
+}
+
+.card3 {
+    border: 1px solid;
+    border-radius: 8px;
+    padding: 10px 10px 50px 10px;
+    color: white;
+    background-color: #212529;
+    position: relative;
+    width: 100%;
+}
+
+.icons {
+    width: 32px;
+    height: 32px;
+    color: #ff499e;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    bottom: 0;
+
+
+
+
+}
+.icon{
+    width: 32px;
+    height: 32px;
+    color: #862e9c;
+    position: absolute;
+    right: 0;
+    margin-top: 20px;
+    bottom: 0;
+    
+}
+.accordion{
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+}
+.accordion li{
+    list-style: none;
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgba(37,37, 0, 0.808);
+
+}
+label{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.accordion label::after{
+    content: "+";
+    font-size: 24px;
+    margin-right: 10px;
+}
+input[type ="checkbox"]{
+    display: none;
+}
+.accordion .answer{
+    color: white;
+    padding: 0 10px;
+    line-height: 1.5;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s, padding
+    0.5s;
+}
+.accordion p{
+    font-size: 16px;
+    margin: 10px 0;
+    font-weight: 300;
+}
+.accordion input[type="checkbox"]:checked  ~ .answer{
+    height: 120px;
+}
+.accordion input[type="checkbox"]:checked + label::after{
+    content: "*";
+}
+.clickon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0px;
+    
+}
+#click{
+    background-color:#c92a2a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+
+
